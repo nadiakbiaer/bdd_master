@@ -12,6 +12,6 @@ def step_impl(context):
 
 @then(u'he see the text change')
 def step_impl(context):
-    assert_equal(context.dd.affichageDrop(),"Drop")
+    assert_equal(context.dd.affichageDrop(),"Dropped!")
 
 
