@@ -1,6 +1,7 @@
+import allure
 from numpy.testing import assert_equal
 from behave import given,when,then
-
+@allure.severity(allure.severity_level.MINOR)
 @given(u'the user look at the home page DragnDrop')
 def step_impl(context):
     context.dd.url("https://qavbox.github.io/demo/dragndrop/")
