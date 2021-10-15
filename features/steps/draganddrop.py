@@ -5,7 +5,7 @@ from behave import given,when,then
 
 from allure import severity, severity_level
 
-@severity(severity_level.CRITICAL)
+
 @given(u'the user look at the home page DragnDrop')
 def step_impl(context):
     context.dd.url("https://qavbox.github.io/demo/dragndrop/")
