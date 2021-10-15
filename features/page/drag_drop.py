@@ -14,7 +14,7 @@ class drag_drop(Browser):
     def url(self, link):
         self.driver.get(link)
 
-
+    @allure.severity(allure.severity_level.TRIVIAL)
     def drag(self):
         source1 = self.driver.find_element_by_id(objectTodrag)
         target1 = self.driver.find_element_by_id(objectTodrop)
