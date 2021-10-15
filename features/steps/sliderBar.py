@@ -1,8 +1,13 @@
+import allure
 from behave import when,then
+from numpy.distutils.mingw32ccompiler import minor
 from numpy.testing import assert_equal
+
+
 
 from selenium.webdriver.common.action_chains import ActionChains
 @when(u'he move the slider bar 0 to 100')
+@allure.severity_level(minor)
 def step_impl(context):
     context.dd.slider()
 
