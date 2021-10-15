@@ -1,9 +1,14 @@
 import os
 
+import allure
 from allure_commons._allure import attach
 from allure_commons.types import AttachmentType
 from selenium import webdriver
 from page.drag_drop import drag_drop
+
+@allure.severity(allure.severity_level.MINOR)
+def draganddrop():
+   pass
 
 path="\drivers\chromedriver.exe"
 def before_scenario(context,scenario):
