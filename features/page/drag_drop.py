@@ -8,7 +8,7 @@ objectTodrag = 'draggable'
 objectTodrop = 'droppable'
 
 class drag_drop(Browser):
-
+    @allure.severity_level.MINOR
     def url(self, link):
         self.driver.get(link)
 
